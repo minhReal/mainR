@@ -1,6 +1,4 @@
-========================================
-Require Executor – Free & Open Source
-========================================
+# Require Executor – Free & Open Source
 
 # About
 Require Executor is a free and open-source Roblox executor system designed to
@@ -90,5 +88,3 @@ Do not resell or claim ownership of this project.
 # Disclaimer
 This project is provided for educational purposes only.
 Use responsibly.
-
-========================================
