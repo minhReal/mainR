@@ -29,7 +29,6 @@ This RemoteEvent is required for SERVER execution mode.
 
 # Step 2: LocalScript Placement
 1. Get the localscript [here](https://github.com/minhReal/mainR/blob/main/Localscript.lua)
-2. 
 2. Create a __Localscript__ inside __StarterGui__
 3. Place it inside __Localscript__
    
