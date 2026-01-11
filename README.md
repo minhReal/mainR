@@ -23,16 +23,16 @@ This system uses:
 2. Go to ReplicatedStorage
 3. Right-click and select:
    Insert Object -> RemoteEvent
-4. Rename the RemoteEvent to:
-   Exe
+4. Rename the RemoteEvent to:Exe
 
 This RemoteEvent is required for SERVER execution mode.
 
 # Step 2: LocalScript Placement
-1. Take the provided LocalScript
-2. Place it inside:
-   StarterGui
-
+1. Get the localscript [here](https://github.com/minhReal/mainR/blob/main/Localscript.lua)
+2. 
+2. Create a __Localscript__ inside __StarterGui__
+3. Place it inside __Localscript__
+   
 The LocalScript handles:
 - GUI rendering
 - User input
@@ -40,9 +40,10 @@ The LocalScript handles:
 - Sending requests to the server
 
 # Step 3: Server Script Placement
-1. Create a Script
-2. Place it inside:
-   ServerScriptService
+1. Get the script [here](https://github.com/minhReal/mainR/blob/main/Script.lua)
+2. Create a __script__ inside __ServerScriptService__
+3. Place it inside __script__
+   
 
 This Script listens to the RemoteEvent and performs server-side actions.
 
