@@ -16,33 +16,46 @@ This system uses:
 - A Server Script for server-side execution
 - A RemoteEvent for client–server communication
 
-# Security Warning (Important)
-This executor is capable of running server-side code when SERVER mode is enabled.
+# Security Warning (Read Carefully)
 
-If you allow all players in your server to freely use SERVER execution, you are
-effectively giving them the ability to run arbitrary code on the server.
+This script does NOT enforce CLIENT-only execution for normal players.
 
-This can be extremely dangerous.
+At the current stage, the execution mode logic depends on how the script is
+configured and who is allowed to access the executor UI. There is no built-in
+system that automatically restricts SERVER mode to regular users.
 
-Possible risks include:
-- Abusing server-side functions
-- Damaging game data or gameplay
-- Triggering Roblox moderation systems
-- Getting the game owner or place permanently banned
+If SERVER execution is exposed to players without proper permission checks,
+they may be able to run server-side require(ID) calls.
 
-For safety reasons:
-- Do NOT allow public players to use SERVER mode
-- Restrict SERVER execution to trusted users only
-- Use Admin lists, permission checks, or private testing places
-- Prefer CLIENT mode for public environments
+This is extremely dangerous.
 
-This project is intended for controlled environments, such as:
-- Personal projects
-- Private test places
-- Development servers
-- Trusted developer teams
+Important risks:
+- Server-side require executes third-party code with full server authority
+- Required modules may be unsafe, malicious, or later modified
+- Any server-side abuse is attributed to the game, not the user
 
-You are fully responsible for how this system is used in your game.
+This means:
+- Game owners can be moderated or permanently banned
+- Group-owned games can also be moderated or banned
+- Administrators are NOT exempt from moderation
+- Trust level does not reduce risk
+
+Even if:
+- Only the owner uses SERVER mode
+- Only admins use SERVER mode
+- The game is private or for testing
+
+Roblox moderation may still take action if unsafe code is executed.
+
+Strong recommendations:
+- Do NOT expose SERVER mode to public players
+- Add permission checks before allowing SERVER execution
+- Restrict executor access to trusted users only
+- Review every required module manually
+- Prefer CLIENT execution for public environments
+
+By using this script, you fully accept responsibility for all consequences
+resulting from server-side execution.
 
 # Installation Guide
 
