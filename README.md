@@ -16,6 +16,34 @@ This system uses:
 - A Server Script for server-side execution
 - A RemoteEvent for client–server communication
 
+# Security Warning (Important)
+This executor is capable of running server-side code when SERVER mode is enabled.
+
+If you allow all players in your server to freely use SERVER execution, you are
+effectively giving them the ability to run arbitrary code on the server.
+
+This can be extremely dangerous.
+
+Possible risks include:
+- Abusing server-side functions
+- Damaging game data or gameplay
+- Triggering Roblox moderation systems
+- Getting the game owner or place permanently banned
+
+For safety reasons:
+- Do NOT allow public players to use SERVER mode
+- Restrict SERVER execution to trusted users only
+- Use Admin lists, permission checks, or private testing places
+- Prefer CLIENT mode for public environments
+
+This project is intended for controlled environments, such as:
+- Personal projects
+- Private test places
+- Development servers
+- Trusted developer teams
+
+You are fully responsible for how this system is used in your game.
+
 # Installation Guide
 
 # Step 1: Create the RemoteEvent
