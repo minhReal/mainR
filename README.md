@@ -1,4 +1,4 @@
-# Require Executor – Free & Open Source
+<h1 align="center">Require Executor – Free & Open Source</h1>
 
 # About
 Require Executor is a free and open-source Roblox executor system designed to
